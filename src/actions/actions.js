@@ -1,0 +1,6 @@
+export const ALL_COMPANIES = 'ALL_COMPANIES';
+export const NEXT_PAGE = 'NEXT_PAGE';
+export const PREV_PAGE = 'PREV_PAGE';
+export const OFFERS_SENIORITY='OFFERS_SENIORITY';
+export const SELECTED='SELECTED';
+export const GET_TECHNOLOGY='GET_TECHNOLOGY';

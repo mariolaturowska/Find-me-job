@@ -1,0 +1,44 @@
+
+
+//styles for filters
+
+.filterSection {
+  flex-basis: 100%;
+  height: 15vh;
+  margin: 0 0 10px 10px;
+  display: inline-block;
+  background-color: RGBA(0, 0, 0, 0.04);
+  padding: 0 0 15px 0;
+  .seniorityLevel {
+    @include sectionSetting(20%);
+    h2 {
+      @extend %text;
+    }
+    .buttonSeniorityFilters {
+      @include sectionSetting(80%);
+      button {
+        @extend %defaultButton;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      button:first-of-type {
+        @include buttonMixin(black, #FEDC56, #FFBF00);
+      }
+      button:nth-of-type(2) {
+        @include buttonMixin(white, lightskyblue, deepskyblue);
+      }
+      button:nth-of-type(3) {
+        @include buttonMixin(white, #00A572, #2E8B57);
+      }
+    }
+  }
+  .technologiesClass {
+    @include sectionSetting(20%);
+    h2 {
+      @extend %text;
+    }
+    .technologiesChoose {
+      flex-basis: 80%;
+    }
+  }
+}

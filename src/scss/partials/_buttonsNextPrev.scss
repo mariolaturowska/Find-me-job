@@ -1,0 +1,13 @@
+
+
+//styles for button for prev and next page
+.buttonsToNextPage {
+  @include displayFlex;
+  height: 13vh;
+  button {
+    @extend %defaultButton;
+    color: white;
+    margin:10px;
+    background-color: dodgerblue;
+  }
+}

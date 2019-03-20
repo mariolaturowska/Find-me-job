@@ -1,0 +1,39 @@
+@mixin displayFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin buttonMixin($color,$background,$backgroundHover) {
+  background-color: $background;
+  color: $color;
+  &:hover {
+    background-color: $backgroundHover
+  }
+}
+
+@mixin sectionSetting($width){
+  float:left;
+  width:$width;
+}
+
+%defaultButton{
+  width: 50px;
+  height: 40px;
+  border-radius: 25%;
+  outline: none;
+  border:none;
+  font-weight: bold;
+  box-shadow: 3px 3px dimgrey;
+  font-size: 15px;
+}
+
+%text {
+  font-weight: normal;
+  color: steelblue;
+  text-align: left;
+  font-style: italic;
+  font-size:18px;
+  padding: 10px;
+  letter-spacing: 2px;
+}

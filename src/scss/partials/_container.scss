@@ -1,0 +1,19 @@
+//styles for container
+.containerWrapper {
+  @include displayFlex;
+  flex-wrap: wrap;
+  margin: 15px;
+  overflow: hidden;
+  height: 96vh;
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 100%;
+    font-size: 30px;
+    color: midnightblue;
+    padding: 15px;
+    text-align: center;
+    height: 4%;
+    letter-spacing: 6px;
+  }
+}
